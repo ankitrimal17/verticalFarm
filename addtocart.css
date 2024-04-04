@@ -1,0 +1,258 @@
+
+
+
+
+
+.add-to-cart-div{
+    display: flex;
+}
+
+/* book container "Top Picks" started  */
+.book-container {
+    position: relative;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 80%;
+}
+
+.sub-container {
+    width: 200px;
+    height: 437px;
+    text-align: center;
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 4px 4px 10px #87878775;
+    background-color: #ffffff;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.sub-container h2 {
+    padding: 0 6px;
+    font-size: 22px;
+    margin: 16px 0px 10px 0px;
+    font-weight: lighter;
+    overflow: hidden;
+}
+
+.sub-container .book-image {
+    display: flex;
+    width: 200px;
+    height: 280px;
+    border-radius: 16px 16px 0px 0px;
+    overflow: hidden;
+}
+
+.sub-container .book-image img {
+    width: 200px;
+    height: auto;
+}
+
+.sub-container .book-price {
+    font-size: 16px;
+    font-weight: lighter;
+    color: #000000b6;
+}
+
+.sub-container .cart {
+    position: absolute;
+    bottom: 0px;
+}
+
+.sub-container .cart button {
+    border: none;
+    width: 200px;
+    height: 48px;
+    display: grid;
+    place-content: center;
+    border-radius: 0 0 16px 16px;
+    color: #ffffff;
+    background-color: #0e7350;
+    border: 1px solid #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.book-container .sub-container:hover {
+    box-shadow: 8px 8px 16px #87878775;
+    transform: scale(1.05);
+}
+
+.book-container .sub-container:hover.sub-container h2 {
+    text-decoration: underline;
+}
+
+.sub-container .cart button:hover {
+    background-color: #0b553b;
+}
+
+
+
+
+
+
+
+
+.addToCart {
+    background-color: #fcfcfc;
+    box-shadow: -4px 4px 16px #00000040;
+    width: 480px;
+    height: 640px;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: -38px;
+    right: -50px;
+    border-radius: 8px;
+}
+
+.addToCart .cartHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #0e7350;
+    height: 6%;
+    padding: 4px;
+    margin: 0 6px;
+}
+
+.addToCart .cartHeader .yourCart {
+    font-size: 32px;
+}
+
+
+
+
+.addToCart .cartHeader .closeCart:hover {
+    background-color: #704bf7;
+}
+
+.addToCart .cartProducts {
+    padding: 16px 8px;
+    border: 1px solid #7b7b7b;
+    border-radius: 6px;
+    margin-top: 6px;
+    background: #0e7350;
+    height: 70%;
+    overflow: auto;
+}
+
+.addToCart .cartProducts .cart-product-detail {
+    display: grid;
+    grid-template-columns: 20% 68% 12%;
+    border-radius: 8px;
+    box-shadow: 2px 2px 8px #00000040;
+    background-color: white;
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+.addToCart .cartProducts .cart-product-detail:hover {
+    background-color: #f8f6ff;
+}
+
+.cartProducts .cartBookImage {
+    width: 70px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.cartProducts .cartBookImage img {
+    width: 100%;
+}
+
+.addToCart .cartProducts .book-detail {
+    padding: 8px 10px;
+}
+
+.addToCart .cartProducts .book-detail .cartBookName {
+    font-size: 22px;
+    text-decoration: underline;
+    color: #0e7350;
+}
+
+.addToCart .cartProducts .book-detail p {
+    font-size: 16px;
+    margin-bottom: -6px;
+    color: #0e7350;
+
+}
+
+.addToCart .cartProducts .remove-from-cart {
+    display: grid;
+    place-content: center;
+    font-size: 32px;
+    color: #0e7350;
+    cursor: pointer;
+}
+
+.addToCart .cartProducts .remove-from-cart i:hover {
+    color: #0b553b;
+}
+
+
+
+
+.addToCart .subtotal-container {
+    display: flex;
+    justify-content: space-between;
+    height: 6%;
+    margin: 6px;
+}
+
+.addToCart .subtotal-container .subtotal {
+    font-size: 18px;
+    padding: 6px;
+    color: #0e7350;
+}
+
+.addToCart .subtotal-container .totalPrice {
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #0e7350;
+}
+
+
+
+.addToCart .cartCheckout {
+    display: grid;
+    place-content: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.addToCart .cartCheckout button {
+    height: 50px;
+    width: 468px;
+    border: none;
+    border-radius: 16px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #0e7350;
+    cursor: pointer;
+}
+
+.addToCart .cartCheckout button:hover {
+    background-color: #0b553b;
+}
+
+.cartProducts::-webkit-scrollbar {
+    width: 6px;
+}
+
+.cartProducts::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+}
+
+.cartProducts::-webkit-scrollbar-thumb {
+    background-color: #bfbfbf;
+    border-radius: 8px;
+}

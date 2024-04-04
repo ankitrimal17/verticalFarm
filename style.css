@@ -1,0 +1,180 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 16px 2px 2px #b8b8b89f;
+}
+.navBar .navWrapper{
+    height: 90px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto 6px;
+    padding: 8px;
+}
+.navBar .navLogo{
+    width: 110px;
+    height: 110px;
+    cursor: pointer;
+    position: relative;
+    bottom: 10px;
+}
+.navBar .navLogo img{
+    width: 100%;
+    height: 100%;
+    
+}
+.navBar .navWrapper .navBtn{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    justify-content: space-evenly;
+    margin: auto 50px;
+}
+.navBar .navBtn #navBtns{
+    padding: 16px;
+    height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size:large;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #0e7350;
+    cursor: pointer;
+}
+.navBar .navBtn #navBtns:hover{
+    background-color: #0e7350;
+    color: #fff;
+    transition: .3s all;
+}
+
+
+/* content wrapper */
+.contentWrapper{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #0e7350;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.contentWrapper .home-wrap{
+    height: 700px;
+    width: 80%;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 55% 45%;
+}
+.home-wrap .vertical-wrap .vertical-title{
+    color: #fff;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 32px;
+}
+.home-wrap .vertical-wrap .vertical-subtitle{
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.home-wrap .vertical-wrap .joinBtn{
+    height: 56px;
+    width: 150px;
+    font-size: 24px;
+    color: #0e7350;
+    background-color: #0e7350;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    cursor: pointer;
+}
+.home-wrap .vertical-wrap .joinBtn:hover{
+    color: #fff;
+    background-color: #0e7350;
+    transition: .3s all;
+}
+.contentWrapper .home-wrap .homepage-image{
+    width: 500px;
+    height: 500px;
+    border: 1px solid red;
+    overflow: hidden;
+}
+.contentWrapper .home-wrap .homepage-image .home-video{
+    position: absolute;
+    height: 300px;
+    width: 450px;
+    background-color: black;
+    border-radius: 16px;
+    top: 220px;
+    z-index: 1;
+}
+.contentWrapper .home-wrap .homepage-image img{
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+}
+
+
+/* courses */
+
+
+.course-container{
+    display: grid;
+    grid-template-columns: 15% 45% 20% 20%;
+    width: 80%;
+    border: 1px solid red;
+    position: relative;
+    top: 90px;
+}
+.course-container .course-div{
+    height: 110px;
+    border: 1px solid red;
+}
+.course-container h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+.course-container h1{
+    color: #c5c500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.course-container p{
+    color: #fff;
+}
+.course-container select{
+    height: 40px;
+    width: 160px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.course-container button{
+    height: 40px;
+    width: 100px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #0e7350;
+}
+.course-container button:hover{
+    color: #fff;
+    background-color: #0e7350;
+    transition: .3s all;
+    cursor: pointer;
+}

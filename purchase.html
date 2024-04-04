@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Plants</title>
+    <script src="https://kit.fontawesome.com/92d70a2fd8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="addtocart.css">
+    <link rel="icon" href="Images/logo01.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+</head>
+<body>
+    <div class="navBar">
+        <div class="navWrapper">
+            <div class="navLogo">
+                <img src="Images/logo.png" alt="logo">
+            </div>
+            <div class="navBtn">
+                <div class="nav-home" id="navBtns" onclick="openPage('index.html')">Home</div>
+                <div class="nav-course" id="navBtns" onclick="openPage('courses.html')">Courses</div>
+                <div class="nav-purchase" id="navBtns">Purchase</div>
+                <div class="nav-about" id="navBtns">About</div>
+                <div class="nav-account" id="navBtns">Account</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="purchaseWrapper contentWrapper">
+        <div class="add-to-cart-div">
+            <div class="header" style="display: none;">
+                <p class="logo">LOGO</p>
+                <div class="carticon"><i class="fa-solid fa-cart-shopping"></i>
+                    <p id="count">0</p>
+                </div>
+            </div>
+            
+            
+            
+            <div class="book-container"></div>
+            
+            
+            
+            
+            
+            <div class="addToCart">
+                <div class="cartHeader">
+                    <div class="yourCart">Your Cart</div>
+                    <!-- <div class="closeCart"><i class="fa-solid fa-xmark"></i></div> -->
+                </div>
+                <div class="cartProducts">
+                    <!-- Products  -->
+                    <div class="cart-product-list">
+            
+            
+                        <div class="emptyCart" style="color:#ffffff; font-size: 30px;">
+                            Oops! Your cart is empty!
+                        </div>
+            
+                    </div>
+                </div>
+            
+            
+                <div class="subtotal-container">
+                    <div class="subtotal">Total:</div>
+                    <div class="totalPrice">Rs. 0.00</div>
+                </div>
+                <div class="cartCheckout">
+                    <button>Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    <script src="addtocart.js"></script>
+</body>
+</html>
